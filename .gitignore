@@ -1,0 +1,21 @@
+# Configuration contenant les identifiants de base de données
+configuration.php
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Système Windows
+Thumbs.db
+Desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Fichiers PHP temporaires
+*.cache
+
+# Fichiers uploadés par les visiteurs
+uploads/*
+!uploads/.gitkeep

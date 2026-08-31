@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Félicien Joseph Manampisoa</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0f172a;
+            background-color: #ffffff;
+            font-size: 9.5pt;
+            line-height: 1.35;
+        }
+        
+        /* Left Blue Accent Bar */
+        .sidebar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 16mm;
+            background-color: #1e293b; /* Dark navy blue bar */
+        }
+
+        .main-wrapper {
+            margin-left: 22mm;
+            padding: 12mm 14mm 12mm 6mm;
+        }
+
+        /* Header Layout */
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 12px;
+        }
+        .logo-td {
+            width: 18%;
+            vertical-align: middle;
+        }
+        .title-td {
+            width: 58%;
+            vertical-align: middle;
+            padding-left: 8px;
+        }
+        .photo-td {
+            width: 24%;
+            vertical-align: middle;
+            text-align: right;
+        }
+
+        /* Logo styling matching FJM dev */
+        .logo-container {
+            display: inline-block;
+        }
+        .logo-fjm {
+            font-size: 26pt;
+            font-weight: 900;
+            color: #1e3a8a;
+            line-height: 0.85;
+            letter-spacing: -1px;
+        }
+        .logo-dev {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #d97706;
+            margin-left: 22px;
+            line-height: 1;
+        }
+
+        .name {
+            font-size: 21pt;
+            font-weight: 800;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0;
+            line-height: 1.1;
+        }
+        .subtitle {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #334155;
+            margin-top: 4px;
+        }
+
+        .photo-img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #cbd5e1;
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+            background-color: #dbeafe;
+            border-radius: 4px;
+            padding: 6px 12px;
+            margin-bottom: 14px;
+        }
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .contact-td {
+            font-size: 9pt;
+            color: #1e293b;
+            vertical-align: middle;
+        }
+        .contact-icon {
+            color: #1e3a8a;
+            font-weight: bold;
+            margin-right: 4px;
+        }
+
+        /* Section Title Styling */
+        .section-title {
+            font-size: 12.5pt;
+            font-weight: 800;
+            color: #0f172a;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid #0f172a;
+        }
+
+        p {
+            margin: 0 0 6px 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+        li {
+            margin-bottom: 3px;
+            color: #1e293b;
+        }
+
+        /* Two column layout for Profil & Atouts */
+        .two-col-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 6px;
+        }
+        .two-col-table td {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 8px;
+        }
+
+        /* Dates & Entries */
+        .entry-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 6px;
+        }
+        .entry-table td {
+            vertical-align: top;
+            padding-bottom: 6px;
+        }
+        .date-cell {
+            width: 95px;
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 9.5pt;
+        }
+        .bullet-cell {
+            width: 15px;
+            color: #1e3a8a;
+            font-size: 10pt;
+        }
+        .content-cell {
+            color: #1e293b;
+        }
+        .item-heading {
+            font-weight: 700;
+            font-size: 9.5pt;
+            color: #0f172a;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #475569;
+            font-size: 9pt;
+            margin-bottom: 3px;
+        }
+
+        /* Competences table */
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 6px;
+        }
+        .comp-table td {
+            padding: 3px 0;
+            vertical-align: top;
+        }
+        .comp-label {
+            width: 150px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        /* Inline lists for Langues / Interests */
+        .inline-span {
+            display: inline-block;
+            margin-right: 18px;
+            font-size: 9pt;
+        }
+
+        .footer-line {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 7.5pt;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar"></div>
+
+    <div class="main-wrapper">
+        <!-- Header -->
+        <table class="header-table">
+            <tr>
+                <td class="logo-td">
+                    <div class="logo-container">
+                        <div class="logo-fjm">FJM</div>
+                        <div class="logo-dev">dev</div>
+                    </div>
+                </td>
+                <td class="title-td">
+                    <div class="name">Félicien Joseph Manampisoa</div>
+                    <div class="subtitle">Développeur Web | Étudiant en Master 1 Informatique</div>
+                </td>
+                <td class="photo-td">
+                    
+                    <svg width="85" height="85" viewBox="0 0 100 100" style="border-radius: 50%;">
+                        <circle cx="50" cy="50" r="50" fill="#cbd5e1" />
+                        <circle cx="50" cy="40" r="20" fill="#475569" />
+                        <path d="M 20 85 C 20 65, 80 65, 80 85 Z" fill="#475569" />
+                    </svg>
+                    
+                </td>
+            </tr>
+        </table>
+
+        <!-- Contact Bar -->
+        <div class="contact-bar">
+            <table class="contact-table">
+                <tr>
+                    <td class="contact-td" style="width: 32%;">
+                        <span class="contact-icon">📞</span> +261 38 45 103 10
+                    </td>
+                    <td class="contact-td" style="width: 38%;">
+                        <span class="contact-icon">✉️</span> felicienjosephm@gmail.com
+                    </td>
+                    <td class="contact-td" style="width: 30%;">
+                        <span class="contact-icon">📍</span> ISIME Betongolo, Antananarivo
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Profil professionnel -->
+        <div class="section-title">Profil professionnel</div>
+        <p style="text-align: justify;">
+            Développeur web en formation, motivé, rigoureux et dynamique, actuellement étudiant en Master 1 Informatique (Développement Web) à l'ISIME Betongolo. Passionné par la conception d'applications web performantes, l'administration de bases de données et la cybersécurité, je souhaite intégrer une entreprise afin de mettre en pratique mes compétences techniques et contribuer efficacement à ses projets.
+        </p>
+
+        <!-- Profil & Atouts -->
+        <div class="section-title">Profil & Atouts</div>
+        <table class="two-col-table">
+            <tr>
+                <td>
+                    <ul>
+                        <li><strong>BAC+4 :</strong> Master 1 Informatique (Développement Web) en cours</li>
+                        <li><strong>Projets :</strong> Deux projets de fin d'études réalisés (DTS et Licence)</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Expériences :</strong> Deux stages professionnels (CENHOSOA et École Chateaubriand)</li>
+                        <li><strong>Certification :</strong> Cybersécurité au quotidien – Orange Digital Center Madagascar</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Formations -->
+        <div class="section-title">Formations</div>
+        <table class="entry-table">
+            <tr>
+                <td class="date-cell">2026 – Présent</td>
+                <td class="bullet-cell">•</td>
+                <td class="content-cell">
+                    <div class="item-heading">Master 1 Informatique (Développement Web)</div>
+                    <div class="item-sub">ISIME Betongolo – Antananarivo</div>
+                    <ul>
+                        <li>Génie logiciel</li>
+                        <li>Architecture logicielle</li>
+                        <li>Technologies Web avancées</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="date-cell">2025</td>
+                <td class="bullet-cell">•</td>
+                <td class="content-cell">
+                    <div class="item-heading">Licence en Informatique (Développement Web)</div>
+                    <div class="item-sub">ISIME Betongolo – Antananarivo</div>
+                    <ul>
+                        <li>Stage de fin d'études au Centre Hospitalier CENHOSOA</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="date-cell">Août 2025</td>
+                <td class="bullet-cell">•</td>
+                <td class="content-cell">
+                    <div class="item-heading">Formation Cybersécurité au quotidien</div>
+                    <div class="item-sub">Orange Digital Center Madagascar — Attestation obtenue</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="date-cell">2024</td>
+                <td class="bullet-cell">•</td>
+                <td class="content-cell">
+                    <div class="item-heading">DTS en Informatique (Développement Web)</div>
+                    <div class="item-sub">Université Saint Vincent de Paul Akamasoa</div>
+                    <ul>
+                        <li>Stage pratique à l'École Chateaubriand</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Projets -->
+        <div class="section-title">Projets</div>
+        <table class="entry-table">
+            <tr>
+                <td class="date-cell">Projet de Licence<br>(2025)</td>
+                <td class="content-cell">
+                    <div class="item-heading">Application de gestion des matériels médicaux — Centre Hospitalier CENHOSOA</div>
+                    <ul>
+                        <li>Conception et développement d'une application desktop.</li>
+                        <li>Gestion des entrées et sorties des équipements médicaux.</li>
+                        <li>Base de données sécurisée &amp; interface d'administration intuitive.</li>
+                    </ul>
+                    <div style="font-size: 8.5pt; color: #334155; margin-top: 2px;"><strong>Technologies :</strong> Java • Java Swing • SQL</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="date-cell" style="padding-top: 4px;">Projet DTS<br>(2024)</td>
+                <td class="content-cell" style="padding-top: 4px;">
+                    <div class="item-heading">Application de gestion du pointage, calendrier scolaire et paie — École Chateaubriand</div>
+                    <ul>
+                        <li>Développement d'une plateforme web de gestion (présences, calendrier, calcul des salaires).</li>
+                    </ul>
+                    <div style="font-size: 8.5pt; color: #334155; margin-top: 2px;"><strong>Technologies :</strong> PHP • JavaScript • Bootstrap • HTML5 • CSS3 • MySQL</div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Compétences techniques -->
+        <div class="section-title">Compétences techniques</div>
+        <table class="comp-table">
+            <tr>
+                <td class="comp-label">Développement Web :</td>
+                <td>HTML5, CSS3, Bootstrap, JavaScript, PHP, Python, Django, Java, JSP, SQL, MySQL</td>
+            </tr>
+            <tr>
+                <td class="comp-label">Systèmes &amp; Maintenance :</td>
+                <td>Installation de systèmes d'exploitation, Maintenance matérielle et logicielle, Diagnostic matériel</td>
+            </tr>
+            <tr>
+                <td class="comp-label">Réseaux &amp; Cybersécurité :</td>
+                <td>Kali Linux, Audit de sécurité, Câblage RJ45, Réseaux locaux</td>
+            </tr>
+            <tr>
+                <td class="comp-label">Bureautique :</td>
+                <td>Microsoft Word, Microsoft Excel, Microsoft PowerPoint</td>
+            </tr>
+        </table>
+
+        <!-- Langues -->
+        <div class="section-title">Langues</div>
+        <div>
+            <span class="inline-span">🇲🇬 <strong>Malagasy :</strong> Langue maternelle</span>
+            <span class="inline-span">🇫🇷 <strong>Français :</strong> Courant</span>
+            <span class="inline-span">🇬🇧 <strong>Anglais :</strong> Niveau intermédiaire</span>
+        </div>
+
+        <!-- Centres d'intérêt -->
+        <div class="section-title">Centres d'intérêt</div>
+        <div>
+            <span class="inline-span">🏀 Basketball</span>
+            <span class="inline-span">📚 Lecture</span>
+            <span class="inline-span">🎵 Musique</span>
+            <span class="inline-span">🎤 Chant</span>
+            <span class="inline-span">💃 Danse</span>
+        </div>
+
+        <div class="footer-line">
+            CV — Félicien Joseph Manampisoa | Document authentique
+        </div>
+    </div>
+</body>
+</html>
